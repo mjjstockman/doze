@@ -28,6 +28,8 @@ const HeaderContainer = () => {
 
       // If input is an empty string, set the default value
       setValue(inputValue === "" ? defaultValue : inputValue);
+
+      e.target.blur();
   };
 
   // Update title or quote on enter/onblur 
@@ -38,7 +40,7 @@ const HeaderContainer = () => {
       <form className="flex flex-col w-full pl-[5%]">
         <input
           type="text"
-          className={`${inter.className} h-16 w-full text-black font-semibold text-4xl border-none bg-transparent focus:border-none outline-none placeholder:text-black placeholder:font-semibold`}
+          className={`${inter.className} underline h-16 w-full text-black font-semibold text-4xl border-none bg-transparent focus:border-none outline-none placeholder:text-black placeholder:font-semibold`}
           value={title}
           onChange={(e) => handleValueChange(e, setTitle)}
           onKeyDown={(e) =>
@@ -48,7 +50,7 @@ const HeaderContainer = () => {
         />
         <input
           type="text"
-          className={`ml-[2%] ${inter.className} h-8 w-full text-black text-xl border-none bg-transparent focus:border-none outline-none placeholder:text-black placeholder:font-semibold`}
+          className={`ml-[2%] ${inter.className} italic h-8 w-full text-black text-xl border-none bg-transparent focus:border-none outline-none placeholder:text-black placeholder:font-semibold`}
           value={quote}
           onChange={(e) => handleValueChange(e, setQuote)}
           onKeyDown={(e) =>
