@@ -1,9 +1,46 @@
+"use client";
+
+import { useEffect, useState } from "react";
+import ProgressionContainer from "./components/ProgressionContainer";
+
 const SubGoalsContainer = () => {
-    return (
-        <div className="bg-red-800 w-full h-[50%] rounded-b-lg">
-            
-        </div>
-    )
+  const [stages, setStages] = useState([
+    {
+      text: "To-Do",
+      color: "bg-[#FF9796]",
+      tasks: [1, 2, 3, 4, 5],
+    },
+    {
+      text: "In Progress",
+      color: "bg-[#7899D4]",
+      tasks: [1, 2, 3],
+    },
+    {
+      text: "Done",
+      color: "bg-[#ACE4AA]",
+      tasks: [1, 2, 3, 4, 5, 6, 7],
+    },
+  ]);
+
+  return (
+    <div className="bg-white w-full h-auto rounded-b-lg p-10">
+      <h1 className="text-2xl text-black font-semibold mb-2">Board</h1>
+
+      <div className="flex gap-4 w-full max-h-screen h-full rounded-lg p-4">
+        {stages.map((section, index) => (
+          <ProgressionContainer
+            key={index}
+            stages={stages}
+            stage={section}
+            setStages={setStages}
+            title={section.text}
+            color={section.color}
+            tasks={section.tasks}
+          />
+        ))}
+      </div>
+    </div>
+  );
 };
 
 export default SubGoalsContainer;

@@ -36,7 +36,7 @@ const HeaderContainer = () => {
   useEffect(() => {}, [title, quote]);
 
   return (
-    <div className="flex items-end bg-red-200 w-full h-[25%] rounded-t-lg hover:cursor-pointer">
+    <div className="flex items-end bg-white w-full h-52 rounded-t-lg hover:cursor-pointer">
       <form className="flex flex-col w-full pl-[5%]">
         <input
           type="text"
