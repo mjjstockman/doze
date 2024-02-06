@@ -6,13 +6,13 @@ const helmet = require('helmet');
 const cors = require('cors');
 require('dotenv').config();
 const createError = require('http-errors');
-const { User } = require('./models/user');
-const { v4: uuidv4 } = require('uuid');
+// const { User } = require('./models/user');
+// const { v4: uuidv4 } = require('uuid');
 
 const port = 3001;
 
 mongoose
-  .connect(process.env.MONGO_URI, {
+  .connect(process.env.MONGODB_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     //   useCreateIndex: true,
