@@ -23,7 +23,7 @@ const SubGoalsContainer = () => {
   ]);
 
   return (
-    <div className="bg-white w-full h-auto rounded-b-lg p-10">
+    <div className="bg-red-800 w-full h-auto rounded-b-lg p-10">
       <h1 className="text-2xl text-black font-semibold mb-2">Board</h1>
 
       <div className="flex gap-4 w-full max-h-screen h-full rounded-lg p-4">

@@ -35,7 +35,7 @@ const MainGoalsContainer = () => {
 
   return (
     <div
-      className={`${inter.className} bg-white flex flex-col w-full ${
+      className={`${inter.className} bg-red-500 flex flex-col w-full ${
         testGoals.length > 5 ? "h-52" : "h-auto"
       } px-20 py-4`}
     >
@@ -50,7 +50,7 @@ const MainGoalsContainer = () => {
       >
         {testGoals.length === 0 ? (
           <div className="w-full">
-            <h2 className="text-black">
+            <h2 className="text-black font-semibold">
               It's recommended to have between 3-5 goals
             </h2>
           </div>
@@ -66,6 +66,12 @@ const MainGoalsContainer = () => {
             ))}{" "}
           </>
         )}
+
+        {testGoals.length === 5 && 
+          <div className="h-14 flex items-center">
+            <p className="text-black">It's recommended to only have 3-5 goals</p>
+          </div>
+        }
 
         <AddGoal goals={testGoals} setGoals={setGoals} />
       </div>
