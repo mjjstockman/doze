@@ -36,7 +36,7 @@ const MainGoalsContainer = () => {
   return (
     <div
       className={`${inter.className} bg-red-500 flex flex-col w-full ${
-        testGoals.length > 5 ? "h-52" : "h-auto"
+        testGoals.length > 5 ? "h-60" : "h-auto"
       } px-20 py-4`}
     >
       <div className="flex items-center w-3/4 border-b border-b-black h-1/4 mb-2">
@@ -50,9 +50,9 @@ const MainGoalsContainer = () => {
       >
         {testGoals.length === 0 ? (
           <div className="w-full">
-            <h2 className="text-black font-semibold">
+            <p className="text-white font-semibold">
               It's recommended to have between 3-5 goals
-            </h2>
+            </p>
           </div>
         ) : (
           <>
