@@ -15,4 +15,11 @@ module.exports = {
     },
   },
   plugins: [require('daisyui')],
+  theme: {
+    extend: {
+      colors: {
+        "button-color": "#7899D4",
+      },
+    },
+  },
 };
