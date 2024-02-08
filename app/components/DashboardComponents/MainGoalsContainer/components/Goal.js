@@ -10,7 +10,7 @@ const Goal = ({ goals, uid, handleRemoveGoal }) => {
     <div className="flex items-center gap-4">
       <div className="flex items-center gap-4">
         <div onClick={handleGoalPressed} className="h-4 w-4 bg-white hover:cursor-pointer"></div>
-        <h2 onClick={handleGoalPressed} className="text-black font-semibold hover:cursor-pointer">
+        <h2 onClick={handleGoalPressed} className="text-black text-lg font-semibold hover:cursor-pointer">
           {goals}
         </h2>
       </div>
