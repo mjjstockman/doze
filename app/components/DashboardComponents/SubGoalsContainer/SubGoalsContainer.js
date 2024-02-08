@@ -9,21 +9,40 @@ const SubGoalsContainer = () => {
       text: "To-Do",
       color: "bg-[#FF9796]",
       circleColor: "#E87775",
-      tasks: [1, 2, 3, 4, 5],
+      tasks: [
+        "Task 1 - Go on a run",
+        "Task 2 - Read a book",
+        "Task 3 - Complete coding exercise",
+        "Task 4 - Write a blog post",
+        "Task 5 - Do grocery shopping",
+      ],
     },
     {
       text: "In Progress",
       color: "bg-[#7899D4]",
       circleColor: "#5677A6",
-      tasks: [1, 2, 3],
+      tasks: [
+        "Task 1 - Attend a meeting",
+        "Task 2 - Work on project",
+        "Task 3 - Research new technologies",
+      ],
     },
     {
       text: "Done",
       color: "bg-[#ACE4AA]",
       circleColor: "#87C082",
-      tasks: [1, 2, 3, 4, 5, 6, 7],
+      tasks: [
+        "Task 1 - Complete task",
+        "Task 2 - Review code",
+        "Task 3 - Submit report",
+        "Task 4 - Plan next week's tasks",
+        "Task 5 - Organize files",
+        "Task 6 - Attend team meeting",
+        "Task 7 - Send emails",
+      ],
     },
   ]);
+  
 
   return (
     <div className="bg-white w-full h-auto rounded-b-lg p-10 ">
