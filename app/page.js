@@ -89,7 +89,7 @@ export default function Home() {
                       </svg>
                       User-Friendly Interface
                     </dt>
-                    <dd className="text-gray-900">
+                    <dd>
                       Creating your tasks shouldn’t be a task itself. Doze will
                       let you easily add, customize and organize tasks without
                       the hassle
